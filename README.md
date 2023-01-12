@@ -18,7 +18,7 @@ _A real action hero! 💪_
 Run the following command:
 
 ```
-npm start -- {AWS_STACK} {GITHUB_REPOSITORY}
+npm start -- {GITHUB_REPOSITORY} {AWS_STACK}
 ```
 
 where:
