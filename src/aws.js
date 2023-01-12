@@ -6,8 +6,8 @@ const ENVIRONMENT = {
   PRODUCTION: "production",
 };
 
-const createAwsCredentialsForRepo = async (repoName, environment) => {
-  const iamUserName = `ci-${repoName}`;
+const createAwsCredentialsForRepo = async (stackName, environment) => {
+  const iamUserName = `ci-${stackName}`;
   const response = await createNewAccessKeyForIamUser(iamUserName, environment);
 
   const { $metadata, AccessKey } = response;
